@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방화 마사지 정보 - 진짜 마사지 고수 찾는 법</title>
+    <meta name="description" content="방화동에서 마사지 잘하는 곳 고를 때 꿀팁 대방출! 내돈내산 후기와 검증된 샵 정보를 다 모았어요. 예약은 010-6279-0862로 문의주세요.">
+    <meta name="keywords" content="방화 마사지 정보, 방화동 마사지, 방화 마사지 잘하는 곳, 방화 스웨디시, 방화 타이마사지, 방화동 안마, 마사지 추천, 마사지 후기">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <link rel="canonical" href="https://t3b08-bh-massage-info-1.vercel.app/">
+    <meta property="og:title" content="방화 마사지 정보 - 방화동 마사지샵 완벽 가이드">
+    <meta property="og:description" content="방화동에서 마사지 고민 끝! 검증된 샵, 솔직한 후기, 가격 정보까지 한번에 확인">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: #86868b;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1d1d1f;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: #0071e3;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background-color: #1d1d1f;
+            transition: all 0.3s ease;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                padding: 20px;
+                border-bottom: 1px solid #d2d2d7;
+                gap: 15px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #86868b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 50px 0 30px;
+            letter-spacing: -0.5px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #86868b;
+            font-size: 0.95rem;
+        }
+        .card .badge {
+            display: inline-block;
+            background-color: #e8f0fe;
+            color: #0071e3;
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .faq {
+            margin: 50px 0;
+        }
+        .faq-item {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .faq-item h4 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            color: #86868b;
+            font-size: 0.95rem;
+        }
+        .cta-section {
+            background-color: #1d1d1f;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 24px;
+            margin: 50px 0;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        .cta-section a {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #1d1d1f;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+        }
+        .cta-section a:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #86868b;
+            font-size: 0.85rem;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 40px;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">방화<span>마사지</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="tel:010-6279-0862">예약</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>방화 마사지, 고민 끝!</h1>
+            <p>내돈내산 경험으로 엄선한 정보만 모았어요. 가격, 분위기, 테라피스트 실력까지 싹 다 공개합니다.</p>
+        </section>
+
+        <h2 class="section-title">🔍 방화동 마사지, 이건 꼭 알아야 돼</h2>
+        <div class="card-grid">
+            <div class="card">
+                <span class="badge">꿀팁</span>
+                <h3>예약 전 체크리스트</h3>
+                <p>샵마다 특화된 코스가 달라. 스웨디시 원하면 오일 종류 물어보고, 타이마사지 원하면 강도 조절 가능한지 꼭 확인해. 난 처음에 대충 갔다가 후회했거든.</p>
+            </div>
+            <div class="card">
+                <span class="badge">가격</span>
+                <h3>적정 가격대</h3>
+                <p>방화동 기준 60분에 7~10만원 사이가 적당해. 너무 싼 곳은 테라피스트 퀄이 떨어질 수 있고, 너무 비싼 곳은 브랜드값일 가능성 있어. 내 경험상 8만원대가 가장 무난했어.</p>
+            </div>
+            <div class="card">
+                <span class="badge">후기</span>
+                <h3>진짜 후기 vs 가짜 후기</h3>
+                <p>별점 5점만 있고 내용이 두줄이면 의심해봐야 돼. 진짜 후기는 "이 부분이 아쉬웠다" 같은 솔직한 얘기가 섞여 있어. 나도 속은 적 있어서 이제는 꼼꼼히 읽어보는 편이야.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">📍 방화 마사지, 지역별 특징</h2>
+        <div class="card-grid">
+            <div class="card">
+                <span class="badge">방화1동</span>
+                <h3>주택가 숨은 맛집</h3>
+                <p>역에서 좀 떨어져 있지만 가격이 착하고 아늑해. 개인샵 위주라 테라피스트 한 분이 꾸준히 관리하는 곳이 많아. 나도 단골샵이 여기 있어.</p>
+            </div>
+            <div class="card">
+                <span class="badge">방화2동</span>
+                <h3>역세권 프리미엄</h3>
+                <p>역 근처라 접근성 좋고 인테리어도 깔끔한 편. 대신 가격이 조금 높은 편이야. 첫 방문이면 여기서 시작하는 것도 괜찮아. 분위기 좋아서 부담 없어.</p>
+            </div>
+            <div class="card">
+                <span class="badge">방화3동</span>
+                <h3>가성비 끝판왕</h3>
+                <p>신축 건물에 입점한 샵들이 많아 시설이 깔끔해. 가격도 합리적이고 코스 선택지가 다양해서 골라보는 재미가 있어. 주차 가능한 곳도 꽤 되더라.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">💬 방화 마사지, 솔직한 내 경험담</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>처음엔 무작정 갔어요</h3>
+                <p>그냥 후기 좋은 곳 찾아가니까 완전 노관심이었어. 손도 대충 대고 시간만 때우는 느낌? 돈 아까워서 그날부터 정보를 모으기 시작했어. 진짜 중요한 건 테라피스트의 손길이더라고.</p>
+            </div>
+            <div class="card">
+                <h3>지금은 이렇게 골라요</h3>
+                <p>1. 전화해서 친절한지 확인 2. 홈페이지에 시술 사진 있는지 체크 3. 후기에 '재방문'이라는 단어가 몇 번 나오는지 봄. 이 세 가지만 지켜도 실패 확률이 확 줄어들어.</p>
+            </div>
+            <div class="card">
+                <h3>추천하는 코스 조합</h3>
+                <p>스웨디시 60분 + 타이마사지 30분 조합이 내 최애야. 스웨디시로 근육 풀고 타이로 마무리 스트레칭 하면 개운함이 두 배야. 샵에 따라서는 패키지 할인도 해주니까 물어보셈.</p>
+            </div>
+        </div>
+
+        <section class="faq">
+            <h2 class="section-title">❓ 방화 마사지, 궁금한 거 다 물어봐</h2>
+            <div class="faq-item">
+                <h4>방화동에 마사지샵은 얼마나 많아요?</h4>
+                <p>생각보다 많아! 방화역 주변만 해도 10곳은 넘는 것 같아. 근데 다 비슷해 보여도 실력은 천차만별이라 내가 정보를 정리해봤어.</p>
+            </div>
+            <div class="faq-item">
+                <h4>예약은 꼭 해야 하나요?</h4>
+                <p>웬만하면 예약하고 가는 게 좋아. 특히 주말에는 워크인 받기 힘든 곳이 많더라고. 전화 한 통이면 시간 낭비 안 해도 돼. 번호는 010-6279-0862야.</p>
+            </div>
+            <div class="faq-item">
+                <h4>처음 가면 어떤 코스가 좋아요?</h4>
+                <p>스웨디시 60분 강추! 처음엔 전신 풀어주는 게 최고야. 타이마사지는 좀 아플 수 있으니까 두 번째 방문 때 도전해보는 걸 추천해.</p>
+            </div>
+            <div class="faq-item">
+                <h4>가격대가 어떻게 되나요?</h4>
+                <p>보통 60분 기준 7~10만원 사이야. 7만원 이하는 이벤트 가격인 경우가 많고, 10만원 넘으면 프리미엄 샵이라고 보면 돼. 내 경험상 8만원대가 가장 합리적이었어.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>지금 바로 예약하세요</h2>
+            <p>방화동에서 진짜 마사지 잘하는 곳, 내가 다 알려줄게. 전화 한 통이면 끝!</p>
+            <a href="tel:010-6279-0862">📞 010-6279-0862</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 방화 마사지 정보 | 모든 정보는 실제 경험을 바탕으로 작성되었습니다.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
