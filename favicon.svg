@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity 2181dca1c8a57897</metadata>
-  <rect width="64" height="64" rx="15" fill="hsl(297 69% 32%)"/>
-  <path d="M32 0h32v64H18Z" fill="hsl(60 65% 54%)" opacity="0.82"/>
-  <g transform="rotate(154 32 32)" opacity="0.42"><path d="M14 20h36L32 50Z" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">BC</text>
+  <title>방화 마사지 정보</title>
+  <rect width="64" height="64" rx="17" fill="hsl(297 67% 20%)"/>
+  <g transform="rotate(180 32 32)"><g fill="none" stroke="hsl(297 24% 96%)" stroke-width="6" stroke-linecap="round"><path d="M32 14a18 18 0 0 1 18 18"/><path d="M32 50a18 18 0 0 1-18-18"/></g><path d="M50 32a18 18 0 0 1-18 18" fill="none" stroke="hsl(82 68% 58%)" stroke-width="6" stroke-linecap="round"/></g>
 </svg>
