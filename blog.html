@@ -1,322 +1,320 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>방화 마사지 정보 - 블로그 | 방화동 마사지 꿀팁</title>
-    <meta name="description" content="방화동에서 진짜 마사지 잘하는 곳 찾기 힘드시죠? 방화 마사지 정보 블로그에서 검증된 샵 후기, 마사지 종류별 효과, 예약 꿀팁까지 다 알려드립니다.">
-    <meta name="keywords" content="방화 마사지, 방화동 마사지, 방화 마사지 정보, 방화 스웨디시, 방화 타이마사지, 방화동 안마, 마사지 추천, 마사지 블로그">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <link rel="canonical" href="https://banghwa-care-zone.mapo-room-guide.xyz/blog.html">
-    <meta property="og:title" content="방화 마사지 정보 - 블로그 | 방화동 마사지 꿀팁">
-    <meta property="og:description" content="방화동에서 진짜 마사지 잘하는 곳 찾기 힘드시죠? 방화 마사지 정보 블로그에서 검증된 샵 후기, 마사지 종류별 효과, 예약 꿀팁까지 다 알려드립니다.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f8f8f8;
-            color: #1d1d1f;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e8e8e8;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #1d1d1f;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        .logo span {
-            color: #0071e3;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 32px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #515154;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-links a:hover {
-            color: #0071e3;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            padding: 4px;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 2.5px;
-            background: #1d1d1f;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #ffffff;
-                flex-direction: column;
-                padding: 20px 24px;
-                gap: 16px;
-                border-bottom: 1px solid #e8e8e8;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            nav {
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-        }
-        main {
-            padding: 48px 0 64px;
-        }
-        .blog-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .blog-header h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 12px;
-            color: #1d1d1f;
-        }
-        .blog-header p {
-            font-size: 1.1rem;
-            color: #6e6e73;
-            max-width: 640px;
-            margin: 0 auto;
-        }
-        .blog-post {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-            max-width: 800px;
-            margin: 0 auto 48px;
-        }
-        .post-meta {
-            font-size: 0.85rem;
-            color: #86868b;
-            margin-bottom: 16px;
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .post-meta span {
-            background: #f2f2f2;
-            padding: 4px 12px;
-            border-radius: 20px;
-        }
-        .blog-post h2 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin: 32px 0 16px;
-            letter-spacing: -0.01em;
-            color: #1d1d1f;
-        }
-        .blog-post h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin: 24px 0 12px;
-            color: #1d1d1f;
-        }
-        .blog-post p {
-            margin-bottom: 16px;
-            color: #3a3a3c;
-            font-size: 1rem;
-        }
-        .blog-post ul {
-            margin: 16px 0 24px;
-            padding-left: 24px;
-        }
-        .blog-post ul li {
-            margin-bottom: 10px;
-            color: #3a3a3c;
-        }
-        .highlight-box {
-            background: #f5f5f7;
-            border-radius: 12px;
-            padding: 24px;
-            margin: 24px 0;
-            border-left: 4px solid #0071e3;
-        }
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-        .cta-section {
-            text-align: center;
-            margin-top: 48px;
-            padding: 32px;
-            background: #f5f5f7;
-            border-radius: 16px;
-        }
-        .cta-section a {
-            display: inline-block;
-            background: #0071e3;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 36px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: background 0.2s;
-            margin-top: 12px;
-        }
-        .cta-section a:hover {
-            background: #005bb5;
-        }
-        .cta-section p {
-            color: #515154;
-            margin-bottom: 8px;
-        }
-        footer {
-            background: #ffffff;
-            border-top: 1px solid #e8e8e8;
-            padding: 32px 0;
-            text-align: center;
-            color: #86868b;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .blog-post {
-                padding: 24px;
-            }
-            .blog-header h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>방화 마사지 정보 - 블로그 | 방화동 마사지 꿀팁</title>
+ <meta name="description" content="방화동에서 진짜 마사지 잘하는 곳 찾기 힘드시죠? 방화 마사지 정보 블로그에서 검증된 샵 후기, 마사지 종류별 효과, 예약 꿀팁까지 다 알려드립니다.">
+ <meta name="keywords" content="방화 마사지, 방화동 마사지, 방화 마사지 정보, 방화 스웨디시, 방화 타이마사지, 방화동 안마, 마사지 추천, 마사지 블로그">
+ <link rel="canonical" href="https://banghwa-care-zone.mapo-room-guide.xyz/blog.html">
+ <meta property="og:title" content="방화 마사지 정보 - 블로그 | 방화동 마사지 꿀팁">
+ <meta property="og:description" content="방화동에서 진짜 마사지 잘하는 곳 찾기 힘드시죠? 방화 마사지 정보 블로그에서 검증된 샵 후기, 마사지 종류별 효과, 예약 꿀팁까지 다 알려드립니다.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+ background: #f8f8f8;
+ color: #1d1d1f;
+ line-height: 1.6;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ background: #ffffff;
+ border-bottom: 1px solid #e8e8e8;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 16px 0;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-left: 24px;
+ padding-right: 24px;
+ }
+ .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ color: #1d1d1f;
+ text-decoration: none;
+ letter-spacing: -0.5px;
+ }
+ .logo span {
+ color: #0071e3;
+ }
+ .nav-links {
+ display: flex;
+ list-style: none;
+ gap: 32px;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: #515154;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.2s;
+ }
+ .nav-links a:hover {
+ color: #0071e3;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ padding: 4px;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2.5px;
+ background: #1d1d1f;
+ border-radius: 2px;
+ transition: 0.3s;
+ }
+ .hamburger.active span:nth-child(1) {
+ transform: rotate(45deg) translate(5px, 5px);
+ }
+ .hamburger.active span:nth-child(2) {
+ opacity: 0;
+ }
+ .hamburger.active span:nth-child(3) {
+ transform: rotate(-45deg) translate(5px, -5px);
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #ffffff;
+ flex-direction: column;
+ padding: 20px 24px;
+ gap: 16px;
+ border-bottom: 1px solid #e8e8e8;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ nav {
+ padding-left: 16px;
+ padding-right: 16px;
+ }
+ }
+ main {
+ padding: 48px 0 64px;
+ }
+ .blog-header {
+ text-align: center;
+ margin-bottom: 48px;
+ }
+ .blog-header h1 {
+ font-size: 2.4rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ margin-bottom: 12px;
+ color: #1d1d1f;
+ }
+ .blog-header p {
+ font-size: 1.1rem;
+ color: #6e6e73;
+ max-width: 640px;
+ margin: 0 auto;
+ }
+ .blog-post {
+ background: #ffffff;
+ border-radius: 16px;
+ padding: 40px;
+ box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+ max-width: 800px;
+ margin: 0 auto 48px;
+ }
+ .post-meta {
+ font-size: 0.85rem;
+ color: #86868b;
+ margin-bottom: 16px;
+ display: flex;
+ gap: 16px;
+ flex-wrap: wrap;
+ }
+ .post-meta span {
+ background: #f2f2f2;
+ padding: 4px 12px;
+ border-radius: 20px;
+ }
+ .blog-post h2 {
+ font-size: 1.6rem;
+ font-weight: 700;
+ margin: 32px 0 16px;
+ letter-spacing: -0.01em;
+ color: #1d1d1f;
+ }
+ .blog-post h3 {
+ font-size: 1.2rem;
+ font-weight: 600;
+ margin: 24px 0 12px;
+ color: #1d1d1f;
+ }
+ .blog-post p {
+ margin-bottom: 16px;
+ color: #3a3a3c;
+ font-size: 1rem;
+ }
+ .blog-post ul {
+ margin: 16px 0 24px;
+ padding-left: 24px;
+ }
+ .blog-post ul li {
+ margin-bottom: 10px;
+ color: #3a3a3c;
+ }
+ .highlight-box {
+ background: #f5f5f7;
+ border-radius: 12px;
+ padding: 24px;
+ margin: 24px 0;
+ border-left: 4px solid #0071e3;
+ }
+ .highlight-box p {
+ margin-bottom: 0;
+ }
+ .cta-section {
+ text-align: center;
+ margin-top: 48px;
+ padding: 32px;
+ background: #f5f5f7;
+ border-radius: 16px;
+ }
+ .cta-section a {
+ display: inline-block;
+ background: #0071e3;
+ color: #ffffff;
+ text-decoration: none;
+ padding: 14px 36px;
+ border-radius: 40px;
+ font-weight: 600;
+ font-size: 1.05rem;
+ transition: background 0.2s;
+ margin-top: 12px;
+ }
+ .cta-section a:hover {
+ background: #005bb5;
+ }
+ .cta-section p {
+ color: #515154;
+ margin-bottom: 8px;
+ }
+ footer {
+ background: #ffffff;
+ border-top: 1px solid #e8e8e8;
+ padding: 32px 0;
+ text-align: center;
+ color: #86868b;
+ font-size: 0.9rem;
+ }
+ footer a {
+ color: #0071e3;
+ text-decoration: none;
+ }
+ @media (max-width: 768px) {
+ .blog-post {
+ padding: 24px;
+ }
+ .blog-header h1 {
+ font-size: 1.8rem;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://banghwa-care-zone.mapo-room-guide.xyz/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">방화<span>마사지</span>정보</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/shops">샵 소개</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="/reviews">후기</a></li>
-                <li><a href="tel:010-6279-0862">📞 예약문의</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+ <header>
+ <nav>
+ <a href="/" class="logo">방화<span>마사지</span>정보</a>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/shops">샵 소개</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/reviews">후기</a></li>
+ 
+ </ul>
+ <div class="hamburger" onclick="toggleMenu()">
+ 
+ 
+ 
+ </div>
+ </nav>
+ </header>
 
 <main class="container">
-  <header class="blog-header">
-    <p class="post-meta">방화동 마사지 정보 가이드</p>
-    <h1>방화 마사지, 예약 전 알아두면 좋은 정보</h1>
-    <p>방화동 인근에서 마사지 업소를 처음 이용하는 이들을 위해 예약 방식과 확인할 사항을 정리했다. 특정 업체를 추천하기보다 일반적으로 통용되는 이용 절차와 용어를 안내하는 글이다.</p>
-  </header>
+ <header class="blog-header">
+ <p class="post-meta">방화동 마사지 정보 가이드</p>
+ <h1>방화 마사지, 예약 전 알아두면 좋은 정보</h1>
+ <p>방화동 인근에서 마사지 업소를 처음 이용하는 이들을 위해 예약 방식과 확인할 사항을 정리했다. 특정 업체를 추천하기보다 일반적으로 통용되는 이용 절차와 용어를 안내하는 글이다.</p>
+ </header>
 
-  <article class="blog-post">
-    <h2>마사지 종류와 표현 정리</h2>
-    <p>업소마다 사용하는 명칭이 조금씩 다르지만, 대체로 관리 부위와 시간에 따라 코스가 구분된다. 전신 위주 코스와 부분 관리 코스로 나뉘는 경우가 많고, 시간 단위로 구성이 달라지므로 예약 시 원하는 부위와 시간을 함께 전달하는 것이 좋다.</p>
+ <article class="blog-post">
+ <h2>마사지 종류와 표현 정리</h2>
+ <p>업소마다 사용하는 명칭이 조금씩 다르지만, 대체로 관리 부위와 시간에 따라 코스가 구분된다. 전신 위주 코스와 부분 관리 코스로 나뉘는 경우가 많고, 시간 단위로 구성이 달라지므로 예약 시 원하는 부위와 시간을 함께 전달하는 것이 좋다.</p>
 
-    <div class="highlight-box">
-      <p>코스명이 같더라도 매장마다 포함 범위가 다를 수 있으므로, 예약 전 구성 내용을 구체적으로 확인하는 것이 도움이 된다.</p>
-    </div>
+ <div class="highlight-box">
+ <p>코스명이 같더라도 매장마다 포함 범위가 다를 수 있으므로, 예약 전 구성 내용을 구체적으로 확인하는 것이 도움이 된다.</p>
+ </div>
 
-    <h2>자주 쓰이는 용어</h2>
-    <ul>
-      <li>전신 코스 — 몸 전체를 순서대로 관리하는 기본 구성.</li>
-      <li>부분 코스 — 특정 부위를 집중적으로 관리하는 구성.</li>
-      <li>연장 — 기본 시간 이후 추가로 이용 시간을 늘리는 것.</li>
-      <li>지명 — 특정 관리사를 지정해 이용을 요청하는 방식으로, 가능 여부는 매장마다 다르다.</li>
-    </ul>
+ <h2>자주 쓰이는 용어</h2>
+ <ul>
+ <li>전신 코스 — 몸 전체를 순서대로 관리하는 기본 구성.</li>
+ <li>부분 코스 — 특정 부위를 집중적으로 관리하는 구성.</li>
+ <li>연장 — 기본 시간 이후 추가로 이용 시간을 늘리는 것.</li>
+ <li>지명 — 특정 관리사를 지정해 이용을 요청하는 방식으로, 가능 여부는 매장마다 다르다.</li>
+ </ul>
 
-    <h2>예약 전 체크리스트</h2>
-    <ul>
-      <li>희망하는 관리 부위와 시간을 미리 정리해둔다.</li>
-      <li>영업 시간과 마지막 접수 가능 시간을 확인한다.</li>
-      <li>주차 또는 대중교통 접근 방법을 확인한다.</li>
-      <li>추가 구성을 선택할 경우 비용 구분이 명확한지 문의한다.</li>
-    </ul>
+ <h2>예약 전 체크리스트</h2>
+ <ul>
+ <li>희망하는 관리 부위와 시간을 미리 정리해둔다.</li>
+ <li>영업 시간과 마지막 접수 가능 시간을 확인한다.</li>
+ <li>주차 또는 대중교통 접근 방법을 확인한다.</li>
+ <li>추가 구성을 선택할 경우 비용 구분이 명확한지 문의한다.</li>
+ </ul>
 
-    <h2>방문 당일 참고 사항</h2>
-    <p>초행길이라면 정확한 위치와 출입구를 사전에 안내받는 것이 좋다. 예약 시간보다 여유 있게 도착하면 대기 없이 이용할 수 있는 경우가 많다.</p>
+ <h2>방문 당일 참고 사항</h2>
+ <p>초행길이라면 정확한 위치와 출입구를 사전에 안내받는 것이 좋다. 예약 시간보다 여유 있게 도착하면 대기 없이 이용할 수 있는 경우가 많다.</p>
 
-    <h2>방화동 주변 정보</h2>
-    <p>방화동은 김포공항과 가까워 이동 전후로 방문하는 이들이 많고, 지하철 5호선과 9호선을 이용한 접근이 편리한 지역으로 꼽힌다. 인근에 대형 상업시설이 있어 방문 전후 일정을 함께 계획하기에도 좋다.</p>
+ <h2>방화동 주변 정보</h2>
+ <p>방화동은 김포공항과 가까워 이동 전후로 방문하는 이들이 많고, 지하철 5호선과 9호선을 이용한 접근이 편리한 지역으로 꼽힌다. 인근에 대형 상업시설이 있어 방문 전후 일정을 함께 계획하기에도 좋다.</p>
 
-    <h2>자주 묻는 질문</h2>
-    <h3>당일 예약도 가능한가요</h3>
-    <p>매장 상황에 따라 다르므로 방문 예정 시간 전에 전화로 확인하는 것이 정확하다.</p>
-    <h3>남성과 여성 모두 이용할 수 있나요</h3>
-    <p>운영 방침은 매장마다 다르므로 문의할 때 함께 확인하는 것이 좋다.</p>
-    <h3>추가 비용이 발생하는 경우는 언제인가요</h3>
-    <p>기본 구성 이외의 관리나 시간 연장을 선택할 때 추가 비용이 발생할 수 있으므로 사전에 확인하는 것이 좋다.</p>
-  </article>
+ <h2>자주 묻는 질문</h2>
+ <h3>당일 예약도 가능한가요</h3>
+ <p>매장 상황에 따라 다르므로 방문 예정 시간 전에 전화로 확인하는 것이 정확하다.</p>
+ <h3>남성과 여성 모두 이용할 수 있나요</h3>
+ <p>운영 방침은 매장마다 다르므로 문의할 때 함께 확인하는 것이 좋다.</p>
+ <h3>추가 비용이 발생하는 경우는 언제인가요</h3>
+ <p>기본 구성 이외의 관리나 시간 연장을 선택할 때 추가 비용이 발생할 수 있으므로 사전에 확인하는 것이 좋다.</p>
+ </article>
 
-  <section class="cta-section">
-    <p>방화동 마사지 이용 문의</p>
-    <a href="tel:010-6279-0862">010-6279-0862</a>
-  </section>
+ <section class="cta-section">
+ <p>방화동 마사지 이용 문의</p>
+ 
+ </section>
 </main>
 
 
